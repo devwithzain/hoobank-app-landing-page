@@ -1,4 +1,4 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star } from "../assets";
+import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star } from "@/public/assets";
 
 export const navLinks = [
     {
@@ -90,6 +90,7 @@ export const stats = [
 
 export const footerLinks = [
     {
+        id: "footerLinks-1",
         title: "Useful Links",
         links: [
             {
@@ -115,6 +116,7 @@ export const footerLinks = [
         ],
     },
     {
+        id: "footerLinks-2",
         title: "Community",
         links: [
             {
@@ -140,6 +142,7 @@ export const footerLinks = [
         ],
     },
     {
+        id: "footerLinks-3",
         title: "Partner",
         links: [
             {

@@ -1,9 +1,9 @@
-// import React from 'react'
-import styles from "../style";
-import { discount, robot } from "../assets";
+import styles from "@/styles/style";
+import { discount, robot } from "@/public/assets";
 import GetStarted from "./GetStarted";
+import Image from "next/image";
 
-const Hero = () => (
+const Hero: React.FC = () => (
   <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
     <div
       className={`flex-1 ${styles.flexStart}
@@ -13,7 +13,7 @@ const Hero = () => (
         className=" flex flex-row items-center py-[6px] px-4
             bg-discount-gradient rounded-[10px] mb-2"
       >
-        <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
+        <Image src={discount} alt="discount" className="w-[32px] h-[32px]" />
         <p className={`${styles.paragraph} ml-2`}>
           <span className="text-white">20%</span> Discount For{" "}
           <span className="text-white">1 Month</span> Account
@@ -38,7 +38,7 @@ const Hero = () => (
       </p>
     </div>
     <div className={`${styles.flexCenter} flex-1 flex md:my-0 my-10 relative`}>
-      <img
+      <Image
         src={robot}
         alt="billings"
         className="w-[100%] h-[100%] relative z-[5]"
