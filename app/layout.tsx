@@ -1,17 +1,17 @@
-import '@/styles/globals.css'
+import "@/styles/globals.css";
 export const metadata = {
-  title: 'HooBank',
-  description: 'Hoobank is Landing Page',
-}
+  title: "HooBank",
+  description: "Hoobank is Landing Page",
+};
 
-const RootLayout = ({ children, }: { children: React.ReactNode }) => {
+const RootLayout = ({ children }: { children: React.ReactNode; }) => {
   return (
     <html>
       <body>
         {children}
       </body>
     </html>
-  )
-}
+  );
+};
 
 export default RootLayout;
