@@ -1,5 +1,5 @@
-# Hoobank-App
+# HooBank
+### Hoobank is a Modern UI/UX Landing Page Build with Next JS and Tailwind CSS.
+<br/>
 
-Hoobank is a Modern UI/UX Landing Page Build with React JS and Tailwind CSS.
-
-![Screenshot 2023-04-23 215302](https://user-images.githubusercontent.com/131141179/233853377-c6eed566-f1a5-490e-9008-7d711b756e86.png)
+![Screenshot 2023-06-03 164358](https://github.com/ZainAli97/Hoobank-App/assets/131141179/053969c8-8dd4-41ed-8a44-40d0ff9a2250)

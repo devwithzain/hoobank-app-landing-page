@@ -1,10 +1,11 @@
-import { feedback } from "../constants";
-import styles from "../style";
+import { feedback } from "@/constants";
+import styles from "@/styles/style";
 import FeedbackCard from "./FeedbackCard";
-const Testimonials = () => (
+const Testimonials: React.FC = () => (
   <section
     id="clients"
-    className={`${styles.paddingY} ${styles.flexCenter} flex-col relative`}>
+    className={`${styles.paddingY} ${styles.flexCenter} flex-col relative`}
+  >
     <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient" />
     <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-10 mb-6 relative z-[1]">
       <h1 className={styles.heading2}>
@@ -12,7 +13,8 @@ const Testimonials = () => (
       </h1>
       <div className="w-full md:mt-0 mt-6">
         <p className={`${styles.paragraph} text-left max-w-[450px]`}>
-          Everything you need to accept card payments and grow your business anywhere on the planet.
+          Everything you need to accept card payments and grow your business
+          anywhere on the planet.
         </p>
       </div>
     </div>
@@ -20,7 +22,6 @@ const Testimonials = () => (
       {feedback.map((card) => (
         <FeedbackCard key={card.id} {...card} />
       ))}
-
     </div>
   </section>
 );

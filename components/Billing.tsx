@@ -1,9 +1,10 @@
-import { apple, bill, google } from "../assets";
-import styles, { layout } from "../style";
-const Billing = () => (
+import { apple, bill, google } from "@/public/assets";
+import styles, { layout } from "@/styles/style";
+import Image from "next/image";
+const Billing: React.FC = () => (
   <section id="product" className={layout.sectionReverse}>
     <div className={layout.sectionImgReverse}>
-      <img
+      <Image
         src={bill}
         alt="billing"
         className="w-[100%] h-[100%] relative z-[5]"
@@ -22,12 +23,12 @@ const Billing = () => (
         placerat.
       </p>
       <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
-        <img
+        <Image
           src={apple}
           alt="apple_store"
           className="w-[128px] h-[42px] object-contain mr-5 cursor-pointer"
         />
-        <img
+        <Image
           src={google}
           alt="google_play"
           className="w-[128px] h-[42px] object-contain cursor-pointer"

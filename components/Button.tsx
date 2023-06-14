@@ -1,6 +1,7 @@
-import React from "react";
-
-const Button = ({ styles }) => {
+interface ButtonProps {
+  styles?: string;
+}
+const Button: React.FC<ButtonProps> = ({ styles }) => {
   return (
     <button
       type="button"
