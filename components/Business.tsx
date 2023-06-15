@@ -2,12 +2,8 @@ import styles, { layout } from "@/styles/style";
 import { features } from "@/constants";
 import Button from "./Button";
 import Image from "next/image";
-interface FeatredCardProps {
-  icon: string;
-  title: string;
-  content: string;
-  index: number;
-}
+import { FeatredCardProps } from "@types";
+
 const FeaturesCard: React.FC<FeatredCardProps> = ({ icon, title, content, index }) => (
   <div
     className={`flex flex-row p-6 rounded-[20px] ${index !== features.length - 1 ? "mb-6" : "mb-0"

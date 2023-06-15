@@ -1,6 +1,5 @@
-interface ButtonProps {
-  styles?: string;
-}
+import { ButtonProps } from "@types";
+
 const Button: React.FC<ButtonProps> = ({ styles }) => {
   return (
     <button

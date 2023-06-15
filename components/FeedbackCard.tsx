@@ -1,11 +1,7 @@
 import { quotes } from "@/public/assets";
+import { FeedBackProps } from "@types";
 import Image from "next/image";
-interface FeedBackProps {
-  content: string;
-  title: string;
-  name: string;
-  img: string | any;
-}
+
 const FeedbackCard: React.FC<FeedBackProps> = ({
   content,
   title,
