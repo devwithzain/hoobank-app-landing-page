@@ -23,7 +23,7 @@ const FeedbackCard: React.FC<FeedBackProps> = ({
       <Image
         src={img}
         alt={name}
-        className="rounded-full"
+        className="rounded-full object-contain object-center"
         width={48}
         height={48}
       />
